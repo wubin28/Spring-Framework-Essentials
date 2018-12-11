@@ -23,6 +23,13 @@ public class RunDemo {
         game.setAwayTeam(redSox);
         game.playGame();
 
+        System.out.println("There are " + context.getBeanDefinitionCount() + " beans");
+        for (String name :
+                context.getBeanDefinitionNames()
+             ) {
+            System.out.println(name);
+        }
+
         context.close();
     }
 }
