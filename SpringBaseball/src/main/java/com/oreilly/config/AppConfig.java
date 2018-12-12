@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.Set;
 
 @Configuration
+@Import(InfrastructureConfig.class)
 @ComponentScan(basePackages = "com.oreilly")
 @EnableAspectJAutoProxy
 public class AppConfig {
